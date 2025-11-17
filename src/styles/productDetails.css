@@ -1,0 +1,131 @@
+/* src/styles/productDetails.css */
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+.product-image img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-info {
+  flex: 1;
+  text-align: left;
+}
+
+.product-info h2 {
+  margin-bottom: 0.3rem;
+  font-size: 26px;
+}
+
+.category {
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #e53935;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.add-to-cart-btn {
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #333;
+  transform: scale(1.03);
+}
+
+.add-to-cart-btn.added {
+  background-color: #27ae60;
+  transform: scale(1.08);
+}
+
+.view-cart-btn {
+  text-decoration: none;
+  background: #1976d2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.view-cart-btn:hover {
+  background: #0d47a1;
+}
+
+/* Floating success message */
+.cart-message {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #27ae60;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  animation: fadeInOut 2s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  10% { opacity: 1; transform: translate(-50%, -10px); }
+  90% { opacity: 1; transform: translate(-50%, -10px); }
+  100% { opacity: 0; transform: translate(-50%, 0); }
+}
+
+.not-found {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.not-found h2 {
+  margin-bottom: 15px;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
