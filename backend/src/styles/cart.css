@@ -1,0 +1,149 @@
+.cart-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.cart-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-details {
+  flex: 1;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.cart-details h4 {
+  margin-bottom: 6px;
+}
+
+.cart-details p {
+  margin-bottom: 8px;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn.minus {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.qty-btn.plus {
+  background: #111;
+  color: #fff;
+}
+
+.qty-btn.minus:hover {
+  background: #ddd;
+}
+
+.qty-btn.plus:hover {
+  background: #333;
+}
+
+.qty-count {
+  margin: 0 10px;
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.remove-btn {
+  background: transparent;
+  color: #c0392b;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.remove-btn:hover {
+  color: #e74c3c;
+}
+
+.cart-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.cart-actions {
+  margin-top: 10px;
+}
+
+.clear-btn,
+.checkout-btn,
+.back-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.clear-btn:hover,
+.checkout-btn:hover,
+.back-btn:hover {
+  background: #333;
+}
+
+.cart-empty {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cart-empty .back-btn {
+  display: inline-block;
+  margin-top: 15px;
+}
